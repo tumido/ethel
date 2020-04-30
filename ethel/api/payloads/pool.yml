@@ -1,0 +1,75 @@
+header:
+  classificationOther: ''
+  companyName: ''
+  customerContactEmail: dev-null@redhat.com
+  customerContactName: Hockeye
+  customerNumber: 1234567890
+  customerRhLoginId: qa@redhat.com
+  emailType: ENGLISH
+  expectedPublicationDate: ''
+  industry: Software
+  opportunityNumber: 0
+  partnerClassification: ''
+  program:
+    active: true
+    addtEmails: dev-null@redhat.com
+    bccEmails: dev-null@redhat.com
+    description: Product Code Creation for Subscription Operations
+    group: staff:pm:hock
+    id: 1
+    name: Production Hock
+    quota: 100
+    shortName: PRODUCTION
+  promocode: ''
+  publicationTitle: ''
+  publisher: ''
+  revPublication: ''
+  rhManagerEmail: dev-null@redhat.com
+  rhManagerName: Manager
+  rhPartnerDevMgrEmail: dev-null@redhat.com
+  rhPartnerDevMgrName: DevManager
+  salesRepEmail: dev-null@redhat.com
+  salesRepName: Salesguy
+  yourHockerEmail: dev-null@redhat.com
+  yourHockerName: Genie
+lines:
+- additionalEmails: []
+  bccList: []
+  ccList: []
+  lineItem:
+    comments: ''
+    completed: false
+    duration: '{{ duration|default("365", true) }} days'
+    emailBcc: ''
+    emailCc: ''
+    emailType: ENDUSER
+    entitlementStartDate: '{{ start_date }}'
+    groupIdentifier: ''
+    opUnit: ''
+    opUnitId: 103
+    partnerAcctNumber: ''
+    poNumber: ''
+    quantity: '{{ quantity }}'
+    reason:
+      id: '14'
+    recipient: ''
+    renew: false
+    replicator:
+      replicatorId: 30
+    replicatorAcctNumber: ''
+    salesOrderNumber: ''
+    satelliteVersion: ''
+    sku: '{{ sku_id }}'
+    subject: ''
+    userAcctNumber: ''
+    webContactId: ''
+    zuper: true
+  numSuperRegnums: 1
+  productSKU: '{{ sku_id }}'
+  serviceTagHashed: false
+login: '{{ username }}'
+notifyVendor: false
+regnumType: entitlement
+satelliteVersion: ''
+sendMail: false
+vendor: REDHAT

@@ -1,0 +1,53 @@
+firstName: '{{ first_name|default("John", true) }}'
+middleNames:
+lastNames: '{{ last_name|default("Doe", true) }}'
+prefix: Sr.
+requireSupportable: false
+authentications:
+- principal: '{{ username }}'
+  provider: Red Hat
+  password: '{{ password }}'
+accountRelationships:
+- nickname: Default User Organization
+  to:
+    administrateNew:
+      name: Default User Organization
+      type: organization
+  title: Quality Engineer
+  department: PnT
+  emails:
+  - address: '{{ email|default("dev-null@redhat.com", true) }}'
+    isPrimary: true
+    isConfirmed: true
+  physicalAddresses:
+  - addressTypes:
+    - market
+    street:
+    - 100 E. Davie St.
+    city: Raleigh
+    state: NC
+    postalCode: '27601'
+    countryIso2Code: US
+  telephones:
+  - isPrimary: true
+    phoneType: other
+    rawNumber: '12345678906'
+  permissions:
+  - permissionCode: rhd_access_middleware
+include:
+  allOf:
+  - personal_information
+  - authentications
+  - status
+  - dates
+  - relationship_summary
+  accountRelationships:
+  - by:
+      active: true
+    allOf:
+    - market_physical_address
+    - primary_email
+    - primary_other_telephone
+    - primary_fax_telephone
+    - current_permissions
+    - attributes

@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: '{"login": "username", "loginUppercase": "USERNAME", "password":
+      "PASSWORD", "personalInfo": {"company": "Default User", "email": "name@surname.com",
+      "firstName": "name", "greeting": "Mr.", "lastName": "surname", "locale": "en_US",
+      "phoneNumber": "1234567890"}, "personalSite": {"address": {"address1": "100
+      E. Davie St.", "city": "Raleigh", "countryCode": "US", "county": "Wake", "postalCode":
+      "27601", "state": "NC"}, "contactInfo": {"emailAddress": "name@surname.com",
+      "phoneNumber": "1234567890"}, "siteType": "MARKETING"}, "system": "WEB", "userType":
+      "P"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '568'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://HOSTNAME.com/svcrest/user/v3/create
+  response:
+    body:
+      string: '12345679'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '8'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 18 Feb 2020 08:16:01 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - j8vpia91jz2e
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

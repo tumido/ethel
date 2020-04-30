@@ -1,0 +1,67 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://HOSTNAME.com/svcrest/terms/presentation/available?login=username&event=attachSubscription&site=candlepin
+  response:
+    body:
+      string: "[{\"id\":\"1507\",\"urlToDisplayThisTerm\":\"http://HOSTNAME.com/some_url\",\"urlToDisplayAllTerms\":\"http://HOSTNAME.com/some_url\",\"isOptional\":false,\"translations\":[{\"id\":\"5061\",\"termsPdfId\":\"c564c302-e2b5-4a30-9224-007c76cf20ae\",\"localeCode\":\"ko_KR\",\"translatedTermsName\":\"\uAD6C\uB3C5
+        \uB3D9\uC758\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5062\",\"termsPdfId\":\"ba5ea69c-d85b-47c1-9b00-4fb841d9c781\",\"localeCode\":\"pt_BR\",\"translatedTermsName\":\"Contrato
+        Enterprise\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5063\",\"termsPdfId\":\"8636092d-fb42-4eaf-af66-43809e97a304\",\"localeCode\":\"en_US\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":\"In order to gain access to or use
+        a Red Hat program and/or product, you must review and agree to all of the
+        agreement(s) below. If you, or the company you represent, have a negotiated
+        and executed agreement that is currently in effect with Red Hat that covers
+        the same program(s) and product(s) covered below, your acceptance of these
+        agreement(s) will not override your existing negotiated agreement(s) with
+        Red Hat.\",\"translatedInstructions\":\"Please select your preferred language
+        and location from the pull down menu and read the Enterprise Agreement document
+        (pdf).\",\"isDefault\":true,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5064\",\"termsPdfId\":\"05a33507-81a8-4a37-94e7-b37be33f87b9\",\"localeCode\":\"ja_JP\",\"translatedTermsName\":\"\u30A8\u30F3\u30BF\u30FC\u30D7\u30E9\u30A4\u30BA\u5951\u7D04\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5065\",\"termsPdfId\":\"d19ba860-e6b6-4bdd-bc7e-2294d53a283f\",\"localeCode\":\"de_DE\",\"translatedTermsName\":\"Gesch\xE4ftskundenvertrag\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5066\",\"termsPdfId\":\"eb1d8ea4-cdb9-49da-af14-6395759cd735\",\"localeCode\":\"it_IT\",\"translatedTermsName\":\"Accordo
+        Per Red Hat Enterprise\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5067\",\"termsPdfId\":\"f4b3d7b1-fc7f-4261-9bda-dc281cf0d7eb\",\"localeCode\":\"fr_FR\",\"translatedTermsName\":\"Contrat
+        D'Entreprise\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5068\",\"termsPdfId\":\"b0bbbee9-9cf6-4a42-a63d-c13157219a90\",\"localeCode\":\"zh_CN\",\"translatedTermsName\":\"\u7EA2\u5E3D\u4F01\u4E1A\u534F\u8BAE\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5069\",\"termsPdfId\":\"3aa0a126-b4bd-4a49-b502-502c30614102\",\"localeCode\":\"en_GB\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5070\",\"termsPdfId\":\"7b7351b9-3d46-4616-a5de-789952447b94\",\"localeCode\":\"en_NZ\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5071\",\"termsPdfId\":\"cdfcc5b9-cf19-4b83-8a7d-207d974b4a31\",\"localeCode\":\"en_SG\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5072\",\"termsPdfId\":\"c890cc1d-45f9-4357-8881-3c3a494a64ed\",\"localeCode\":\"es_ES\",\"translatedTermsName\":\"Contrato
+        Red Hat Para Empresas\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5073\",\"termsPdfId\":\"93498f4d-9d40-41e8-984b-920840eddfab\",\"localeCode\":\"en_HK\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5074\",\"termsPdfId\":\"62b0751d-0e2b-4687-b954-f03cbebfa74b\",\"localeCode\":\"en_IN\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5075\",\"termsPdfId\":\"b43c75cd-2322-4837-9ad8-7afdfbb06c17\",\"localeCode\":\"en_AU\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5116\",\"termsPdfId\":\"7261736e-3d3a-4434-a650-3a65830cb930\",\"localeCode\":\"en_ID\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5117\",\"termsPdfId\":\"c3d97f38-ec71-4c86-83c9-7831ffac8471\",\"localeCode\":\"ru_RU\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"},{\"id\":\"5118\",\"termsPdfId\":\"63e44a83-8014-4a72-a378-339a8e9814db\",\"localeCode\":\"en_CA\",\"translatedTermsName\":\"Enterprise
+        Agreement\",\"translatedDescription\":null,\"translatedInstructions\":null,\"isDefault\":false,\"pdfDownloadUrl\":\"http://HOSTNAME.com/some_url\"}]}]"
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 18 Feb 2020 09:10:42 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

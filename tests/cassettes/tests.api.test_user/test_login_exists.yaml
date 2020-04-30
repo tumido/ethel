@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://HOSTNAME.com/svcrest/user/v3/login=username
+  response:
+    body:
+      string: '[{"id":12345678,"login":"username","loginUppercase":"USERNAME","password":null,"active":true,"oracleContactId":null,"orgId":87654321,"contactPermissions":{"allowEmailContact":false,"allowFaxContact":false,"allowMailContact":false,"allowPhoneContact":false,"allowThirdPartyContact":false},"personalInfo":{"company":"Default
+        User","firstName":"John","greeting":"Mr.","lastName":"Doe","suffix":null,"title":null,"email":"dev-null@redhat.com","emailConfirmed":false,"phoneNumber":"1234567890","faxNumber":null,"locale":"en_US","timeZone":{"name":"America/Los_Angeles","rawOffset":-28800000},"department":null},"personalSite":{"id":28729676,"address":{"address1":"100
+        E. Davie St.","address2":null,"address3":null,"address4":null,"city":"Raleigh","state":"NC","county":"Wake","countryCode":"US","postalCode":"27601","poBox":false},"contactInfo":{"emailAddress":"dev-null@redhat.com","faxNumber":null,"phoneNumber":"1234567890","url":null},"notes":null,"oracleSiteId":null,"siteType":"MARKETING","firstName":"John","lastName":"Doe","description":"Default
+        Address","defaultSite":true,"active":true,"customer":null,"usages":null},"customer":{"id":87654321,"name":"John
+        Doe","password":null,"creditApplicationCompleted":false,"customerType":"P","oracleCustomerNumber":null,"namedAccount":false,"createdDate":1582014686667,"updatedDate":1582014789440},"createdDate":1582014686678,"updatedDate":1582014789203,"system":null,"userType":null}]'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1437'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 18 Feb 2020 08:45:09 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 2i9zz3yelfki0
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,25 @@
+login: '{{ username }}'
+loginUppercase: '{{ username|upper }}'
+password: '{{ password }}'
+personalInfo:
+  company: Default User
+  email: '{{ email|default("dev-null@redhat.com", true) }}'
+  firstName: '{{ first_name|default("John", true) }}'
+  greeting: Mr.
+  lastName: '{{ last_name|default("Doe", true) }}'
+  locale: en_US
+  phoneNumber: '1234567890'
+personalSite:
+  address:
+    address1: 100 E. Davie St.
+    city: Raleigh
+    countryCode: US
+    county: Wake
+    postalCode: '27601'
+    state: NC
+  contactInfo:
+    emailAddress: '{{ email|default("dev-null@redhat.com", true) }}'
+    phoneNumber: '1234567890'
+  siteType: MARKETING
+system: WEB
+userType: P
