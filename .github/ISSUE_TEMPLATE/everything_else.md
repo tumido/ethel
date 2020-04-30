@@ -6,5 +6,6 @@ labels: ''
 assignees: ''
 
 ---
-## Issue
+### Issue
+
 Feel free to write your issue, but please be descriptive! Thanks ❤️
