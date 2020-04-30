@@ -1,15 +1,14 @@
-from datetime import timedelta, date
+from datetime import date, timedelta
 
-from hypothesis import given
 import hypothesis.strategies as st
 import pytest  # type: ignore
+from hypothesis import given
 from requests import HTTPError
 
+import tests.strategies as custom_st
 from ethel import Account, EthelError
 from ethel.api import API
 from ethel.utils import apply_mapping
-
-import tests.strategies as custom_st
 
 # pylint: disable=protected-access,pointless-statement
 
@@ -115,6 +114,7 @@ def test_owner_id(api: API):
 
 @given(st.lists(st.just({'key': 1234}), min_size=2) | st.just([]))
 def test_no_owner_exception(api: API, owners: list):
+    """Should raise IndexError when no owner or more than one."""
     api.candlepin.get_owners.return_value = owners
     account = Account(api, "USERNAME", "PASSWORD")
     with pytest.raises(IndexError):

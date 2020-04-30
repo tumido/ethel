@@ -1,10 +1,13 @@
-import pytest
+# pylint: disable=redefined-outer-name
 
-from ethel.api import UserV1, EthelError
+import pytest  # type: ignore
+
+from ethel.api import EthelError, UserV1
 
 
 @pytest.fixture(scope="module")
 def user_v1(api_base: str) -> UserV1:
+    """Test Users V1 API fixture."""
     return UserV1(api_base)
 
 
@@ -51,4 +54,3 @@ def test_login_fails(user_v1: UserV1):
     """Fetch nothing for nonexistant account."""
     account = user_v1.login("this-username-doesnt-exist")
     assert len(account) == 0
-

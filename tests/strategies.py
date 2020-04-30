@@ -1,4 +1,5 @@
 from functools import reduce
+
 import hypothesis.strategies as st
 
 pools = st.lists(  # type: ignore

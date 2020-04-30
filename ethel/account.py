@@ -1,14 +1,9 @@
-from datetime import datetime, timedelta, date
-from typing import Union, List
+from datetime import date, datetime, timedelta
+from typing import List, Union
 
 from .api import API
-from .utils import (
-    parse_date,
-    parse_duration,
-    apply_mapping,
-    get_instance_multiplier,
-    get_quantity,
-)
+from .utils import (apply_mapping, get_instance_multiplier, get_quantity,
+                    parse_date, parse_duration)
 
 
 class Account:

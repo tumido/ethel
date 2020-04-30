@@ -6,10 +6,10 @@ Provides access to all APIs, that are used by Ethel.
 from dataclasses import dataclass
 
 from .candlepin import Candlepin
+from .exceptions import EthelConnectionError, EthelError
 from .subscription import ActivationV2, RegnumV5
 from .terms import TermsV1
 from .user import UserV1
-from .exceptions import EthelError, EthelConnectionError
 
 
 @dataclass

@@ -1,4 +1,4 @@
-from .base import APIBase, CERT
+from .base import CERT, APIBase
 from .exceptions import raises_from_ebs as raises_ethel_exception
 
 

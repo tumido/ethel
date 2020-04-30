@@ -1,6 +1,8 @@
 from functools import wraps
 
-from requests import HTTPError, ConnectionError as RequestsConnectionError, Timeout
+from requests import ConnectionError as RequestsConnectionError
+from requests import HTTPError, Timeout
+
 from .base import APIBase
 
 

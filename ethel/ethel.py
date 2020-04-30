@@ -1,6 +1,5 @@
-from .api import initialize_apis
 from .account import Account
-
+from .api import initialize_apis
 
 HOSTS = dict(
     stage=("stage.api.redhat.com", "candlepin.dist.stage.ext.phx2.redhat.com"),

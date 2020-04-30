@@ -1,5 +1,5 @@
-from hypothesis import given
 import hypothesis.strategies as st
+from hypothesis import given
 
 from ethel.api.base import APIBase, APISession
 

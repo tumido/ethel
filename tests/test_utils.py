@@ -1,7 +1,8 @@
-from datetime import date, timedelta, datetime
-from hypothesis import given
+from datetime import date, datetime, timedelta
+
 import hypothesis.strategies as st
 import pytest  # type: ignore
+from hypothesis import given
 
 from ethel import utils
 
@@ -9,6 +10,7 @@ from ethel import utils
 def test_parse_date_from_none():
     """Should parse date from date."""
     assert utils.parse_date() == date.today()
+
 
 @given(st.dates())
 def test_parse_date_from_date(given_date: date):
@@ -46,7 +48,8 @@ def test_parse_duration_from_none():
 def test_parse_duration_from_invalid():
     """Should parse duration from invalid type."""
     with pytest.raises(ValueError):
-        utils.parse_duration('some text')
+        utils.parse_duration("some text")
+
 
 @given(st.integers(min_value=1, max_value=999999999))
 def test_parse_duration_from_int_positive(days):

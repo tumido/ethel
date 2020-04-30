@@ -1,6 +1,6 @@
 import ethel
-
 from ethel.ethel import HOSTS
+
 
 def test_ethel(mocker):
     """Should pass hostnames to initialize_apis."""
@@ -13,7 +13,7 @@ def test_stage(mocker):
     """Should create an instance pointing to Stage environment."""
     mocked_initialize_apis = mocker.patch.object(ethel.ethel, "initialize_apis")
     e = ethel.Ethel.stage()
-    mocked_initialize_apis.assert_called_once_with(*HOSTS['stage'])
+    mocked_initialize_apis.assert_called_once_with(*HOSTS["stage"])
     assert isinstance(e, ethel.Ethel)
 
 
@@ -21,7 +21,7 @@ def test_qa(mocker):
     """Should create an instance pointing to QA environment."""
     mocked_initialize_apis = mocker.patch.object(ethel.ethel, "initialize_apis")
     e = ethel.Ethel.qa()
-    mocked_initialize_apis.assert_called_once_with(*HOSTS['qa'])
+    mocked_initialize_apis.assert_called_once_with(*HOSTS["qa"])
     assert isinstance(e, ethel.Ethel)
 
 

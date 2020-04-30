@@ -1,5 +1,5 @@
-from datetime import datetime, date, timedelta
-from typing import Union, Callable, Any, Optional
+from datetime import date, datetime, timedelta
+from typing import Any, Callable, Optional, Union
 
 
 def parse_date(value: Union[datetime, date, str] = None) -> date:

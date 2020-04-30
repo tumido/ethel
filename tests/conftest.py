@@ -1,9 +1,11 @@
 import os
 import re
+from urllib.parse import urlsplit, urlunsplit
+
 import pytest  # type: ignore
+
 from ethel import Account
 from ethel.api import API
-from urllib.parse import urlsplit, urlunsplit
 
 
 @pytest.fixture
@@ -30,11 +32,14 @@ def account(api: API, mocker) -> Account:  # pylint: disable=redefined-outer-nam
 
 @pytest.fixture(scope="module")
 def vcr_config() -> dict:
+    """Set up VCRpy cassette recorder."""
     def scrub_hostname(request):
+        """Scrub hostnames from requests."""
         request.uri = urlunsplit(urlsplit(request.uri)._replace(netloc="HOSTNAME.com"))
         return request
 
     def scrub_urls_from_response(response):
+        """Scrub any links from responses."""
         response["body"]["string"] = re.sub(
             b'http.*?(?=")',
             b"http://HOSTNAME.com/some_url",
@@ -52,7 +57,7 @@ def vcr_config() -> dict:
 
 @pytest.fixture(scope="module")
 def vcr_cassette_dir(request):
-    # Put all cassettes in tests/cassettes/{module}/{test_case}.yaml
+    """Put all cassettes in tests/cassettes/{module}/{test_case}.yaml"""
     return os.path.join("tests/cassettes", request.module.__name__)
 
 

@@ -1,6 +1,6 @@
-from .base import APIBase, CERT
-from .utils import Template
+from .base import CERT, APIBase
 from .exceptions import raises_from_ebs as raises_ethel_exception
+from .utils import Template
 
 
 class UserV1(APIBase):

@@ -1,10 +1,13 @@
-import pytest
+# pylint: disable=redefined-outer-name
 
-from ethel.api import TermsV1, EthelError
+import pytest  # type: ignore
+
+from ethel.api import EthelError, TermsV1
 
 
 @pytest.fixture(scope="module")
 def terms_v1(api_base: str) -> TermsV1:
+    """Test Terms V1 API fixture."""
     return TermsV1(api_base)
 
 
